@@ -5,3 +5,16 @@
 .code-editor-font {
   font-family: 'Courier New', Courier, monospace;
 }
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blinking-cursor {
+  animation: blink 1s step-start infinite;
+}
